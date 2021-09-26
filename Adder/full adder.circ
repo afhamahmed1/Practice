@@ -59,19 +59,19 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
     <appear>
-      <polyline fill="none" points="200,50 200,70" stroke="#000000"/>
-      <polyline fill="none" points="201,70 230,80" stroke="#000000"/>
+      <polyline fill="none" points="200,50 200,80" stroke="#000000"/>
+      <polyline fill="none" points="200,80 229,90" stroke="#000000"/>
       <polyline fill="none" points="200,50 250,70" stroke="#000000"/>
-      <polyline fill="none" points="250,70 250,120" stroke="#000000"/>
-      <polyline fill="none" points="229,113 200,131" stroke="#000000"/>
-      <polyline fill="none" points="250,120 201,150" stroke="#000000"/>
-      <polyline fill="none" points="231,80 230,111" stroke="#000000"/>
-      <polyline fill="none" points="200,150 200,132" stroke="#000000"/>
-      <circ-port height="8" pin="100,70" width="8" x="86" y="66"/>
-      <circ-port height="8" pin="100,110" width="8" x="96" y="96"/>
-      <circ-port height="8" pin="100,150" width="8" x="86" y="126"/>
-      <circ-port height="10" pin="600,160" width="10" x="295" y="95"/>
-      <circ-anchor facing="east" height="6" width="6" x="297" y="97"/>
+      <polyline fill="none" points="250,70 250,130" stroke="#000000"/>
+      <polyline fill="none" points="230,110 200,120" stroke="#000000"/>
+      <polyline fill="none" points="250,130 201,150" stroke="#000000"/>
+      <polyline fill="none" points="230,90 230,110" stroke="#000000"/>
+      <polyline fill="none" points="200,150 200,120" stroke="#000000"/>
+      <circ-port height="8" pin="100,70" width="8" x="196" y="56"/>
+      <circ-port height="8" pin="100,110" width="8" x="196" y="136"/>
+      <circ-port height="8" pin="100,150" width="8" x="226" y="136"/>
+      <circ-port height="10" pin="600,160" width="10" x="245" y="95"/>
+      <circ-anchor facing="east" height="6" width="6" x="247" y="97"/>
     </appear>
     <wire from="(290,220)" to="(350,220)"/>
     <wire from="(290,90)" to="(350,90)"/>
@@ -103,29 +103,20 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <wire from="(130,70)" to="(200,70)"/>
     <wire from="(410,110)" to="(540,110)"/>
     <wire from="(150,270)" to="(350,270)"/>
-    <comp lib="0" loc="(100,110)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="1" loc="(410,110)" name="XOR Gate">
-      <a name="inputs" val="2"/>
-    </comp>
-    <comp lib="0" loc="(580,160)" name="Splitter">
-      <a name="facing" val="west"/>
-    </comp>
-    <comp lib="0" loc="(100,70)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
     <comp lib="1" loc="(400,200)" name="AND Gate">
       <a name="inputs" val="2"/>
     </comp>
     <comp lib="1" loc="(260,90)" name="XOR Gate">
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="1" loc="(400,290)" name="AND Gate">
+    <comp lib="1" loc="(510,240)" name="OR Gate">
       <a name="inputs" val="2"/>
     </comp>
-    <comp lib="0" loc="(100,150)" name="Pin">
+    <comp lib="0" loc="(100,110)" name="Pin">
       <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="1" loc="(410,110)" name="XOR Gate">
+      <a name="inputs" val="2"/>
     </comp>
     <comp lib="0" loc="(600,160)" name="Pin">
       <a name="facing" val="west"/>
@@ -133,7 +124,16 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="labelloc" val="east"/>
     </comp>
-    <comp lib="1" loc="(510,240)" name="OR Gate">
+    <comp lib="0" loc="(100,70)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(100,150)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp lib="0" loc="(580,160)" name="Splitter">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="1" loc="(400,290)" name="AND Gate">
       <a name="inputs" val="2"/>
     </comp>
   </circuit>
@@ -142,18 +142,15 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
     <a name="clabel" val=""/>
     <a name="clabelup" val="east"/>
     <a name="clabelfont" val="SansSerif plain 12"/>
-    <wire from="(180,90)" to="(240,90)"/>
-    <wire from="(180,120)" to="(240,120)"/>
-    <wire from="(180,150)" to="(240,150)"/>
+    <wire from="(280,230)" to="(290,230)"/>
+    <wire from="(290,160)" to="(290,230)"/>
+    <wire from="(220,160)" to="(260,160)"/>
+    <wire from="(220,80)" to="(260,80)"/>
     <wire from="(310,120)" to="(350,120)"/>
-    <comp lib="0" loc="(180,90)" name="Pin">
+    <comp lib="0" loc="(280,230)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
-    <comp loc="(310,120)" name="main"/>
-    <comp lib="0" loc="(180,150)" name="Pin">
-      <a name="tristate" val="false"/>
-    </comp>
-    <comp lib="0" loc="(180,120)" name="Pin">
+    <comp lib="0" loc="(220,80)" name="Pin">
       <a name="tristate" val="false"/>
     </comp>
     <comp lib="0" loc="(350,120)" name="Pin">
@@ -162,5 +159,9 @@ This file is intended to be loaded by Logisim (http://www.cburch.com/logisim/).
       <a name="width" val="2"/>
       <a name="labelloc" val="east"/>
     </comp>
+    <comp lib="0" loc="(220,160)" name="Pin">
+      <a name="tristate" val="false"/>
+    </comp>
+    <comp loc="(310,120)" name="main"/>
   </circuit>
 </project>
